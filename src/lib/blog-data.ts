@@ -32,7 +32,7 @@ Abu Dhabi's real estate market has shown remarkable resilience and growth potent
 
 ## Luxury Developments
 
-Projects like Modon Avenew represent the pinnacle of luxury living in Abu Dhabi. With thoughtfully designed villas, premium amenities, and attractive financing options, these developments cater to families seeking the best in modern living.
+Projects like Modon Wadeem represent the pinnacle of luxury living in Abu Dhabi. With thoughtfully designed villas, premium amenities, and attractive financing options, these developments cater to families seeking the best in modern living.
 
 ## Conclusion
 
@@ -49,7 +49,7 @@ Whether you're looking for a primary residence or an investment property, Abu Dh
     title: 'Understanding ADIB Home Financing Options',
     excerpt: 'A comprehensive guide to ADIB\'s Sharia-compliant home financing solutions and how they can help you own your dream home.',
     content: `
-Abu Dhabi Islamic Bank (ADIB) offers some of the most competitive and flexible home financing solutions in the UAE. Understanding these options can help you make an informed decision when purchasing your dream home at Modon Avenew.
+Abu Dhabi Islamic Bank (ADIB) offers some of the most competitive and flexible home financing solutions in the UAE. Understanding these options can help you make an informed decision when purchasing your dream home at Modon Wadeem.
 
 ## Sharia-Compliant Financing
 
@@ -58,7 +58,7 @@ All ADIB home financing products are fully Sharia-compliant, operating on the pr
 ## Key Benefits
 
 ### Low Down Payment
-Through our exclusive partnership with ADIB, Modon Avenew buyers can secure their home with just a 5% down payment, making luxury homeownership more accessible than ever.
+Through our exclusive partnership with ADIB, Modon Wadeem buyers can secure their home with just a 5% down payment, making luxury homeownership more accessible than ever.
 
 ### Up to 75% Financing
 Maximize your purchasing power with financing up to 75% of the property value, allowing you to invest in the home you truly desire.
@@ -73,7 +73,7 @@ The streamlined pre-approval process ensures you know your budget quickly, allow
 
 1. **Application**: Submit your financing application with required documents
 2. **Pre-Approval**: Receive your pre-approval letter within days
-3. **Property Selection**: Choose your preferred villa at Modon Avenew
+3. **Property Selection**: Choose your preferred villa at Modon Wadeem
 4. **Final Approval**: Complete the process with ADIB's dedicated team
 5. **Ownership**: Move into your dream home
 
@@ -125,9 +125,9 @@ Modon developments prioritize community living with:
 - Retail and commercial areas
 - Educational facilities nearby
 
-## Modon Avenew
+## Modon Wadeem
 
-Our latest development, Modon Avenew, exemplifies everything we stand for. Featuring 4, 5, and 6-bedroom luxury villas and elegant townhouses, this community offers:
+Our latest development, Modon Wadeem, exemplifies everything we stand for. Featuring 4, 5, and 6-bedroom luxury villas and elegant townhouses, this community offers:
 
 - Premium lifestyle amenities
 - Strategic Abu Dhabi location

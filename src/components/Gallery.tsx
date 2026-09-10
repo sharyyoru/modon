@@ -12,22 +12,22 @@ import { trackCTAClick } from '@/lib/tracking';
 const galleryImages = [
   {
     src: '/images/hero-bg.jpg',
-    alt: 'Modon Avenew Exterior',
+    alt: 'Modon Wadeem Exterior',
     category: 'Exterior',
   },
   {
     src: '/images/hero-bg.jpg',
-    alt: 'Modon Avenew Living Space',
+    alt: 'Modon Wadeem Living Space',
     category: 'Interior',
   },
   {
     src: '/images/hero-bg.jpg',
-    alt: 'Modon Avenew Bedroom',
+    alt: 'Modon Wadeem Bedroom',
     category: 'Interior',
   },
   {
     src: '/images/hero-bg.jpg',
-    alt: 'Modon Avenew Community',
+    alt: 'Modon Wadeem Community',
     category: 'Community',
   },
 ];
@@ -62,7 +62,7 @@ export function Gallery() {
               A Glimpse of <span className="font-semibold">Excellence</span>
             </h2>
             <p className="text-white/60 text-lg">
-              Explore the exceptional design and craftsmanship that defines Modon Avenew.
+              Explore the exceptional design and craftsmanship that defines Modon Wadeem.
             </p>
           </div>
 

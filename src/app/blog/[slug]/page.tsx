@@ -21,12 +21,12 @@ export async function generateMetadata({ params }: BlogPostPageProps) {
 
   if (!post) {
     return {
-      title: 'Post Not Found | Modon Avenew',
+      title: 'Post Not Found | Modon Wadeem',
     };
   }
 
   return {
-    title: `${post.title} | Modon Avenew Blog`,
+    title: `${post.title} | Modon Wadeem Blog`,
     description: post.excerpt,
   };
 }
@@ -138,7 +138,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             <div className="mt-16 pt-8 border-t border-white/10">
               <div className="bg-gradient-to-r from-[#1B365D] to-[#0f1f38] rounded-2xl p-8 text-center">
                 <h3 className="text-2xl font-semibold text-white mb-4">
-                  Interested in Modon Avenew?
+                  Interested in Modon Wadeem?
                 </h3>
                 <p className="text-white/60 mb-6">
                   Register now to receive exclusive pricing and floor plans.

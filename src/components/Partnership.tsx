@@ -130,7 +130,7 @@ export function Partnership() {
         modalName="partnership_registration"
       >
         <p className="text-gray-600 mb-6">
-          Register to receive financing details and get pre-approved for your Modon Avenew home.
+          Register to receive financing details and get pre-approved for your Modon Wadeem home.
         </p>
         <RegistrationForm onSuccess={() => setIsModalOpen(false)} />
       </Modal>

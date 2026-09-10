@@ -42,13 +42,13 @@ export function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
               <p className="text-[#C4A35A] text-sm font-semibold tracking-[0.2em] uppercase mb-4">
-                Introducing Avenew
+                Introducing Wadeem
               </p>
               <h2 className="text-4xl md:text-5xl text-white font-light mb-6 leading-tight">
                 A New Standard of <span className="font-semibold">Luxury Living</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Modon Avenew represents a new chapter in Abu Dhabi&apos;s residential landscape. 
+                Modon Wadeem represents a new chapter in Abu Dhabi&apos;s residential landscape. 
                 Featuring meticulously designed villas and townhouses, this exclusive community 
                 offers the perfect blend of privacy, luxury, and modern convenience.
               </p>
@@ -89,7 +89,7 @@ export function AboutSection() {
         modalName="about_registration"
       >
         <p className="text-gray-600 mb-6">
-          Register to receive detailed information about Modon Avenew, including brochures and floor plans.
+          Register to receive detailed information about Modon Wadeem, including brochures and floor plans.
         </p>
         <RegistrationForm onSuccess={() => setIsModalOpen(false)} />
       </Modal>

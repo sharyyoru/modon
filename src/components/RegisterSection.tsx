@@ -19,7 +19,7 @@ export function RegisterSection() {
             </h2>
             <p className="text-white/60 text-lg max-w-2xl mx-auto">
               Be among the first to receive exclusive pricing, floor plans, and priority 
-              unit selection at Modon Avenew.
+              unit selection at Modon Wadeem.
             </p>
           </div>
 

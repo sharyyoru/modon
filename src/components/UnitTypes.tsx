@@ -60,7 +60,7 @@ export function UnitTypes() {
               Choose Your <span className="font-semibold">Dream Home</span>
             </h2>
             <p className="text-white/60 text-lg">
-              From elegant townhouses to expansive 6-bedroom villas, Modon Avenew 
+              From elegant townhouses to expansive 6-bedroom villas, Modon Wadeem 
               offers a range of residences designed for discerning families.
             </p>
           </div>

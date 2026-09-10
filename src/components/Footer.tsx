@@ -37,7 +37,7 @@ export function Footer() {
               className="h-12 w-auto mb-6"
             />
             <p className="text-white/60 text-sm leading-relaxed max-w-md mb-6">
-              Modon Avenew offers exclusive luxury villas and townhouses in Abu Dhabi. 
+              Modon Wadeem offers exclusive luxury villas and townhouses in Abu Dhabi. 
               Experience refined living with 5% downpayment and up to 75% ADIB financing.
             </p>
             <div className="flex items-center gap-3 mb-3">

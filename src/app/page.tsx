@@ -21,7 +21,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "RealEstateListing",
-      name: "Modon Avenew",
+      name: "Modon Wadeem",
       description:
         "Exclusive 4, 5 & 6 bedroom luxury villas and townhouses in Abu Dhabi by Modon Properties with ADIB financing.",
       url: "https://modon-avenew.com",
@@ -52,10 +52,10 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What types of properties are available at Modon Avenew?",
+          name: "What types of properties are available at Modon Wadeem?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Modon Avenew offers 4-bedroom, 5-bedroom, and 6-bedroom luxury villas, as well as elegant townhouses.",
+            text: "Modon Wadeem offers 4-bedroom, 5-bedroom, and 6-bedroom luxury villas, as well as elegant townhouses.",
           },
         },
         {
@@ -76,10 +76,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Can foreign nationals purchase property at Modon Avenew?",
+          name: "Can foreign nationals purchase property at Modon Wadeem?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes, Modon Avenew is located in a designated freehold area where foreign nationals can purchase property with full ownership rights.",
+            text: "Yes, Modon Wadeem is located in a designated freehold area where foreign nationals can purchase property with full ownership rights.",
           },
         },
       ],

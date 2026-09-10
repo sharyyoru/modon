@@ -6,8 +6,8 @@ import { useSectionTracking } from '@/hooks/useTracking';
 
 const faqs = [
   {
-    question: 'What types of properties are available at Modon Avenew?',
-    answer: 'Modon Avenew offers a range of luxury residences including 4-bedroom villas, 5-bedroom villas, 6-bedroom villas, and elegant townhouses. Each property is designed with premium finishes and modern amenities.',
+    question: 'What types of properties are available at Modon Wadeem?',
+    answer: 'Modon Wadeem offers a range of luxury residences including 4-bedroom villas, 5-bedroom villas, 6-bedroom villas, and elegant townhouses. Each property is designed with premium finishes and modern amenities.',
   },
   {
     question: 'What is the minimum downpayment required?',
@@ -18,8 +18,8 @@ const faqs = [
     answer: 'We offer up to 75% financing through Abu Dhabi Islamic Bank (ADIB) with Sharia-compliant solutions, competitive rates, and flexible repayment terms.',
   },
   {
-    question: 'Can foreign nationals purchase property at Modon Avenew?',
-    answer: 'Yes, Modon Avenew is located in a designated freehold area where foreign nationals can purchase property with full ownership rights.',
+    question: 'Can foreign nationals purchase property at Modon Wadeem?',
+    answer: 'Yes, Modon Wadeem is located in a designated freehold area where foreign nationals can purchase property with full ownership rights.',
   },
   {
     question: 'What amenities are included in the community?',
@@ -50,7 +50,7 @@ export function FAQ() {
             Frequently Asked <span className="font-semibold">Questions</span>
           </h2>
           <p className="text-white/60 text-lg">
-            Find answers to common questions about Modon Avenew.
+            Find answers to common questions about Modon Wadeem.
           </p>
         </div>
 

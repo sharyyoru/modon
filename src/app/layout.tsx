@@ -16,21 +16,21 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Modon Avenew | Luxury Villas in Abu Dhabi",
+  title: "Modon Wadeem | Luxury Villas in Abu Dhabi",
   description: "Discover exclusive 4, 5 & 6 bedroom luxury villas and townhouses in Abu Dhabi by Modon. 5% downpayment with up to 75% ADIB financing. Register for pricing.",
-  keywords: ["Modon", "Avenew", "Abu Dhabi villas", "luxury homes", "ADIB financing", "UAE real estate"],
+  keywords: ["Modon", "Wadeem", "Abu Dhabi villas", "luxury homes", "ADIB financing", "UAE real estate"],
   authors: [{ name: "Modon Properties" }],
   openGraph: {
-    title: "Modon Avenew | Luxury Villas in Abu Dhabi",
+    title: "Modon Wadeem | Luxury Villas in Abu Dhabi",
     description: "Exclusive luxury villas and townhouses with 5% downpayment and ADIB financing.",
     url: "https://modon-avenew.com",
-    siteName: "Modon Avenew",
+    siteName: "Modon Wadeem",
     locale: "en_AE",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Modon Avenew | Luxury Villas in Abu Dhabi",
+    title: "Modon Wadeem | Luxury Villas in Abu Dhabi",
     description: "Exclusive luxury villas and townhouses with 5% downpayment and ADIB financing.",
   },
   robots: {

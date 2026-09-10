@@ -4,7 +4,7 @@ import { ArrowLeft, Clock } from 'lucide-react';
 import { blogPosts } from '@/lib/blog-data';
 
 export const metadata = {
-  title: 'Blog | Modon Avenew',
+  title: 'Blog | Modon Wadeem',
   description: 'Latest insights and articles about luxury living, home financing, and Abu Dhabi real estate.',
 };
 

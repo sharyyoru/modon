@@ -58,7 +58,7 @@ export function Hero() {
             <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white font-light tracking-tight leading-[1.1] mb-6 animate-fade-in-up">
               Modon
               <br />
-              <span className="font-semibold text-[#C4A35A]">Avenew</span>
+              <span className="font-semibold text-[#C4A35A]">Wadeem</span>
             </h1>
 
             <p className="text-white/60 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
@@ -123,7 +123,7 @@ export function Hero() {
         modalName="hero_registration"
       >
         <p className="text-gray-600 mb-6">
-          Register now to receive exclusive pricing, floor plans, and priority unit selection at Modon Avenew.
+          Register now to receive exclusive pricing, floor plans, and priority unit selection at Modon Wadeem.
         </p>
         <RegistrationForm onSuccess={() => setIsModalOpen(false)} />
       </Modal>

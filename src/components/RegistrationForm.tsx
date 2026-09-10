@@ -282,7 +282,7 @@ export function RegistrationForm({ onSuccess }: RegistrationFormProps) {
 
       <p className="text-xs text-gray-500 text-center">
         By submitting this form, you agree to receive communications from Modon
-        Properties regarding Modon Avenew. Your information is secure and will
+        Properties regarding Modon Wadeem. Your information is secure and will
         not be shared with third parties.
       </p>
     </form>

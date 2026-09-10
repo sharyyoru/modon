@@ -83,7 +83,7 @@ export function MobileCTA() {
         <div className="bg-[#0a0a0a]/98 backdrop-blur-lg border-t border-white/10 px-4 py-3 safe-area-bottom">
           <div className="flex items-center gap-3">
             <div className="flex-1 min-w-0">
-              <p className="text-white font-semibold text-sm truncate">Modon Avenew</p>
+              <p className="text-white font-semibold text-sm truncate">Modon Wadeem</p>
               <p className="text-[#C4A35A] text-xs">5% Down • 75% ADIB Financing</p>
             </div>
             <Button
@@ -124,7 +124,7 @@ export function MobileCTA() {
                 Get Priority Access
               </h3>
               <p className="text-white/60 mb-6">
-                Register now for exclusive pricing, floor plans & priority unit selection at Modon Avenew.
+                Register now for exclusive pricing, floor plans & priority unit selection at Modon Wadeem.
               </p>
 
               <div className="grid grid-cols-2 gap-3 mb-6">
@@ -173,7 +173,7 @@ export function MobileCTA() {
         modalName="mobile_registration"
       >
         <p className="text-gray-600 mb-6">
-          Be among the first to access exclusive pricing and unit selection at Modon Avenew.
+          Be among the first to access exclusive pricing and unit selection at Modon Wadeem.
         </p>
         <RegistrationForm onSuccess={() => setIsModalOpen(false)} />
       </Modal>

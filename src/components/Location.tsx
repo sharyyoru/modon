@@ -37,7 +37,7 @@ export function Location() {
                 Heart of <span className="font-semibold">Abu Dhabi</span>
               </h2>
               <p className="text-white/60 text-lg leading-relaxed mb-8">
-                Strategically located in Abu Dhabi, Modon Avenew offers unparalleled 
+                Strategically located in Abu Dhabi, Modon Wadeem offers unparalleled 
                 connectivity to the city&apos;s key destinations while providing a 
                 serene residential environment.
               </p>
@@ -73,7 +73,7 @@ export function Location() {
                 <div className="w-full h-full flex items-center justify-center bg-[#1B365D]/20">
                   <div className="text-center p-8">
                     <MapPin className="w-16 h-16 text-[#C4A35A] mx-auto mb-4" />
-                    <p className="text-white text-xl font-semibold mb-2">Modon Avenew</p>
+                    <p className="text-white text-xl font-semibold mb-2">Modon Wadeem</p>
                     <p className="text-white/60">Abu Dhabi, UAE</p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export function Location() {
         modalName="visit_modal"
       >
         <p className="text-gray-600 mb-6">
-          Register to schedule a private viewing of Modon Avenew with our dedicated sales team.
+          Register to schedule a private viewing of Modon Wadeem with our dedicated sales team.
         </p>
         <RegistrationForm onSuccess={() => setIsModalOpen(false)} />
       </Modal>

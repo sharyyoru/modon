@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Privacy Policy | Modon Avenew',
-  description: 'Privacy policy for Modon Avenew website.',
+  title: 'Privacy Policy | Modon Wadeem',
+  description: 'Privacy policy for Modon Wadeem website.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -35,7 +35,7 @@ export default function PrivacyPolicyPage() {
 
               <h2 className="text-2xl font-semibold text-white mt-8 mb-4">Introduction</h2>
               <p className="text-white/70 mb-4">
-                Modon Properties (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or register your interest in Modon Avenew.
+                Modon Properties (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) respects your privacy and is committed to protecting your personal data. This privacy policy explains how we collect, use, and safeguard your information when you visit our website or register your interest in Modon Wadeem.
               </p>
 
               <h2 className="text-2xl font-semibold text-white mt-8 mb-4">Information We Collect</h2>
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
                 We use the information we collect to:
               </p>
               <ul className="list-disc list-inside text-white/70 space-y-2 mb-4">
-                <li>Respond to your inquiries about Modon Avenew</li>
+                <li>Respond to your inquiries about Modon Wadeem</li>
                 <li>Send you information about pricing and availability</li>
                 <li>Provide you with updates about the project</li>
                 <li>Improve our website and services</li>

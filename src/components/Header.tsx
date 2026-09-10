@@ -129,7 +129,7 @@ export function Header() {
         modalName="header_registration"
       >
         <p className="text-gray-600 mb-6">
-          Be among the first to access exclusive pricing and unit selection at Modon Avenew.
+          Be among the first to access exclusive pricing and unit selection at Modon Wadeem.
         </p>
         <RegistrationForm onSuccess={() => setIsModalOpen(false)} />
       </Modal>

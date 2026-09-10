@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata = {
-  title: 'Terms of Use | Modon Avenew',
-  description: 'Terms of use for Modon Avenew website.',
+  title: 'Terms of Use | Modon Wadeem',
+  description: 'Terms of use for Modon Wadeem website.',
 };
 
 export default function TermsOfUsePage() {

@@ -1,114 +1,59 @@
 'use client';
 
 import Image from 'next/image';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
+import { trackCTAClick } from '@/lib/tracking';
 
-const footerLinks = {
-  quickLinks: [
-    { label: 'Villas', href: '#units' },
-    { label: 'Amenities', href: '#amenities' },
-    { label: 'Location', href: '#location' },
-    { label: 'Register', href: '#register' },
-  ],
-  legal: [
-    { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Terms of Use', href: '/terms-of-use' },
-  ],
-};
+const WHATSAPP_NUMBER = '971585417606';
 
 export function Footer() {
-  const handleNavClick = (href: string) => {
-    if (href.startsWith('#')) {
-      const element = document.querySelector(href);
-      element?.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleWhatsAppClick = () => {
+    trackCTAClick('footer_whatsapp', 'footer');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}`, '_blank');
   };
 
   return (
     <footer className="bg-[#0a0a0a] border-t border-white/10">
-      <div className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-          <div className="lg:col-span-2">
+      <div className="container mx-auto px-4 py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-6">
             <Image
               src="/images/modon-logo.webp"
               alt="Modon"
-              width={140}
-              height={46}
-              className="h-12 w-auto mb-6"
+              width={100}
+              height={33}
+              className="h-8 w-auto"
             />
-            <p className="text-white/60 text-sm leading-relaxed max-w-md mb-6">
-              Modon Wadeem offers exclusive luxury villas and townhouses in Abu Dhabi. 
-              Experience refined living with 5% downpayment and up to 75% ADIB financing.
-            </p>
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
-                <MapPin className="w-4 h-4 text-[#C4A35A]" />
-              </div>
-              <span className="text-white/60 text-sm">Abu Dhabi, UAE</span>
-            </div>
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
-                <Phone className="w-4 h-4 text-[#C4A35A]" />
-              </div>
-              <span className="text-white/60 text-sm">+971 2 XXX XXXX</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">
-                <Mail className="w-4 h-4 text-[#C4A35A]" />
-              </div>
-              <span className="text-white/60 text-sm">info@modon-avenew.com</span>
+            <div className="hidden md:block w-px h-8 bg-white/10" />
+            <div className="hidden md:block">
+              <p className="text-[#C4A35A] text-sm font-medium">ADIB Financing Partner</p>
             </div>
           </div>
 
-          <div>
-            <h4 className="text-white font-semibold mb-6">Quick Links</h4>
-            <ul className="space-y-3">
-              {footerLinks.quickLinks.map((link) => (
-                <li key={link.label}>
-                  <button
-                    onClick={() => handleNavClick(link.href)}
-                    className="text-white/60 hover:text-[#C4A35A] text-sm transition-colors"
-                  >
-                    {link.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold mb-6">Legal</h4>
-            <ul className="space-y-3">
-              {footerLinks.legal.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-white/60 hover:text-[#C4A35A] text-sm transition-colors"
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-8">
-              <h4 className="text-white font-semibold mb-4">In Partnership With</h4>
-              <p className="text-[#C4A35A] font-semibold">ADIB</p>
-              <p className="text-white/40 text-xs">Abu Dhabi Islamic Bank</p>
-            </div>
-          </div>
+          <button
+            onClick={handleWhatsAppClick}
+            className="flex items-center gap-2 px-5 py-2.5 bg-[#25D366] hover:bg-[#20BD5A] text-white text-sm font-medium rounded-full transition-colors"
+          >
+            <MessageCircle className="w-4 h-4" />
+            WhatsApp: +971 58 541 7606
+          </button>
         </div>
       </div>
 
       <div className="border-t border-white/10">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <p className="text-white/40 text-xs">
               © {new Date().getFullYear()} Modon Properties. All rights reserved.
             </p>
-            <p className="text-white/40 text-xs">
-              Prices and availability subject to change without notice. Images are for illustration purposes only.
-            </p>
+            <div className="flex items-center gap-4">
+              <a href="/privacy-policy" className="text-white/40 hover:text-white/60 text-xs transition-colors">
+                Privacy
+              </a>
+              <a href="/terms-of-use" className="text-white/40 hover:text-white/60 text-xs transition-colors">
+                Terms
+              </a>
+            </div>
           </div>
         </div>
       </div>

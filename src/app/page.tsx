@@ -1,20 +1,10 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { ValueBar } from "@/components/ValueBar";
-import { AboutSection } from "@/components/AboutSection";
-import { UnitTypes } from "@/components/UnitTypes";
-import { Partnership } from "@/components/Partnership";
-import { Gallery } from "@/components/Gallery";
-import { Amenities } from "@/components/Amenities";
-import { PaymentPlan } from "@/components/PaymentPlan";
-import { Location } from "@/components/Location";
-import { Developer } from "@/components/Developer";
 import { FAQ } from "@/components/FAQ";
-import { FeaturedArticles } from "@/components/FeaturedArticles";
-import { RegisterSection } from "@/components/RegisterSection";
 import { Footer } from "@/components/Footer";
 import { TrackingProvider } from "@/components/TrackingProvider";
-import { MobileCTA } from "@/components/MobileCTA";
+import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -99,20 +89,10 @@ export default function Home() {
         <main>
           <Hero />
           <ValueBar />
-          <AboutSection />
-          <UnitTypes />
-          <Partnership />
-          <Gallery />
-          <Amenities />
-          <PaymentPlan />
-          <Location />
-          <Developer />
           <FAQ />
-          <FeaturedArticles />
-          <RegisterSection />
         </main>
         <Footer />
-        <MobileCTA />
+        <WhatsAppWidget />
       </TrackingProvider>
     </>
   );

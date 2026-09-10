@@ -65,7 +65,7 @@ export function trackLinkedInConversion() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const lintrk = (window as any).lintrk;
   if (lintrk) {
-    lintrk('track', { conversion_id: 'LINKEDIN_CONVERSION_ID' }); // Replace with actual conversion ID
+    lintrk('track', { conversion_id: 'AQWkCjBL_dl8ryxOKV9-fRIx3-6oOp8zEIyW3jUMw6anRdSmTc3LwB_30gUg8OhQE2tDJMeIHwQCeYkNRrQ4kdzTmhQBDj4-FgbUfrEzajd6LcSoBgqBrvojPn_RI8g0l5BUGFeO9sO3t5Eh6KFRhNCjZdKMf-mGylZtSaAhq0vdcZr3nNivJ1qhj11hcISKwOBKrT9G7aCz70debjK-oM-_t8g0SvBJQVbN49hRJAgvLjKJk5lIFdV3VOm8579uBgP0SF7nNQKH8_oCQ8xCk5oLzHrRPsDAaMTcVtenOR4eD2OOoL30_F0WsFYuHNxYV-YtLvBWhs6XLuuQuAyZmsGcDnBEEA' });
   }
   
   trackEvent('linkedin_conversion', {});

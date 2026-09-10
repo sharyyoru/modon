@@ -49,7 +49,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {/* LinkedIn Insight Tag */}
         <Script id="linkedin-insight" strategy="afterInteractive">
           {`
-            _linkedin_partner_id = "LINKEDIN_PARTNER_ID";
+            _linkedin_partner_id = "AQWkCjBL_dl8ryxOKV9-fRIx3-6oOp8zEIyW3jUMw6anRdSmTc3LwB_30gUg8OhQE2tDJMeIHwQCeYkNRrQ4kdzTmhQBDj4-FgbUfrEzajd6LcSoBgqBrvojPn_RI8g0l5BUGFeO9sO3t5Eh6KFRhNCjZdKMf-mGylZtSaAhq0vdcZr3nNivJ1qhj11hcISKwOBKrT9G7aCz70debjK-oM-_t8g0SvBJQVbN49hRJAgvLjKJk5lIFdV3VOm8579uBgP0SF7nNQKH8_oCQ8xCk5oLzHrRPsDAaMTcVtenOR4eD2OOoL30_F0WsFYuHNxYV-YtLvBWhs6XLuuQuAyZmsGcDnBEEA";
             window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
             window._linkedin_data_partner_ids.push(_linkedin_partner_id);
           `}
@@ -64,7 +64,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             width="1"
             style={{ display: 'none' }}
             alt=""
-            src="https://px.ads.linkedin.com/collect/?pid=LINKEDIN_PARTNER_ID&fmt=gif"
+            src="https://px.ads.linkedin.com/collect/?pid=AQWkCjBL_dl8ryxOKV9-fRIx3-6oOp8zEIyW3jUMw6anRdSmTc3LwB_30gUg8OhQE2tDJMeIHwQCeYkNRrQ4kdzTmhQBDj4-FgbUfrEzajd6LcSoBgqBrvojPn_RI8g0l5BUGFeO9sO3t5Eh6KFRhNCjZdKMf-mGylZtSaAhq0vdcZr3nNivJ1qhj11hcISKwOBKrT9G7aCz70debjK-oM-_t8g0SvBJQVbN49hRJAgvLjKJk5lIFdV3VOm8579uBgP0SF7nNQKH8_oCQ8xCk5oLzHrRPsDAaMTcVtenOR4eD2OOoL30_F0WsFYuHNxYV-YtLvBWhs6XLuuQuAyZmsGcDnBEEA&fmt=gif"
           />
         </noscript>
       </body>

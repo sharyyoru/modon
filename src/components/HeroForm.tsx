@@ -1,12 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Loader2, CheckCircle, Send } from 'lucide-react';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 import { Button } from './ui/Button';
-import { trackFormStart, trackFormSubmit } from '@/lib/tracking';
+import { trackFormStart, trackFormSubmit, trackLinkedInConversion } from '@/lib/tracking';
 import { getUTMParams } from '@/lib/utils';
 
 const formSchema = z.object({
@@ -26,9 +28,13 @@ export function HeroForm() {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
   } = useForm<FormData>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      phone: '+971',
+    },
   });
 
   const handleFormFocus = () => {
@@ -62,6 +68,7 @@ export function HeroForm() {
       }
 
       trackFormSubmit(true);
+      trackLinkedInConversion();
       setIsSuccess(true);
     } catch (err) {
       trackFormSubmit(false);
@@ -119,12 +126,20 @@ export function HeroForm() {
         </div>
 
         <div>
-          <input
-            {...register('phone')}
-            type="tel"
-            className="w-full px-4 py-4 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[#C4A35A] focus:border-transparent transition-all text-gray-900 text-base"
-            placeholder="Phone Number"
-            autoComplete="tel"
+          <Controller
+            name="phone"
+            control={control}
+            render={({ field }) => (
+              <PhoneInput
+                {...field}
+                defaultCountry="ae"
+                inputClassName="!w-full !px-4 !py-4 !border-gray-200 !rounded-xl focus:!ring-2 focus:!ring-[#C4A35A] focus:!border-transparent !text-gray-900 !text-base"
+                countrySelectorStyleProps={{
+                  buttonClassName: '!px-3 !py-4 !border-gray-200 !rounded-l-xl !bg-gray-50',
+                }}
+                className="phone-input-wrapper"
+              />
+            )}
           />
           {errors.phone && (
             <p className="text-red-500 text-xs mt-1">{errors.phone.message}</p>

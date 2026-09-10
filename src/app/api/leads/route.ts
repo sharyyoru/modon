@@ -76,6 +76,23 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Fire webhook for lead notification (non-blocking)
+    if (process.env.LEAD_WEBHOOK_URL) {
+      fetch(process.env.LEAD_WEBHOOK_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: validatedData.full_name,
+          phone: validatedData.phone,
+          email: validatedData.email,
+          source: 'modon_wadeem',
+          created_at: new Date().toISOString(),
+        }),
+      }).catch((err) => {
+        console.error('Webhook error:', err);
+      });
+    }
+
     return NextResponse.json({ success: true, id: data.id }, { status: 201 });
   } catch (error) {
     if (error instanceof z.ZodError) {

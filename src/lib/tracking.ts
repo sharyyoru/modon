@@ -57,3 +57,16 @@ export function trackModalOpen(modalName: string) {
 export function trackModalClose(modalName: string) {
   trackEvent('modal_close', { modal_name: modalName });
 }
+
+export function trackLinkedInConversion() {
+  if (typeof window === 'undefined') return;
+  
+  // Fire LinkedIn conversion event
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const lintrk = (window as any).lintrk;
+  if (lintrk) {
+    lintrk('track', { conversion_id: 'LINKEDIN_CONVERSION_ID' }); // Replace with actual conversion ID
+  }
+  
+  trackEvent('linkedin_conversion', {});
+}

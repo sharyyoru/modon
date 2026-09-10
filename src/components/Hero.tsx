@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
+import Image from 'next/image';
 import { Play, Pause } from 'lucide-react';
 import { HeroForm } from './HeroForm';
 import { useVideoTracking } from '@/hooks/useVideoTracking';
@@ -24,13 +25,22 @@ export function Hero() {
   return (
     <section className="relative min-h-screen bg-[#0a0a0a] overflow-hidden flex items-center">
       <div className="absolute inset-0">
+        {/* Mobile: Static Image (faster load) */}
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="Modon Wadeem"
+          fill
+          priority
+          className="md:hidden object-cover opacity-30"
+        />
+        {/* Desktop: Video */}
         <video
           ref={videoRef}
           autoPlay
           muted
           loop
           playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
+          className="hidden md:block absolute inset-0 w-full h-full object-cover opacity-30"
         >
           <source src="/videos/hero.mp4" type="video/mp4" />
         </video>
@@ -43,7 +53,7 @@ export function Hero() {
           <div className="text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full mb-6 animate-fade-in">
               <span className="w-2 h-2 bg-[#C4A35A] rounded-full animate-pulse" />
-              <span className="text-white/70 text-sm tracking-wide">Abu Dhabi, UAE</span>
+              <span className="text-white/70 text-sm tracking-wide">Hudayriyat Island, Abu Dhabi</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white font-light tracking-tight leading-[1.1] mb-4 animate-fade-in-up">
@@ -81,9 +91,10 @@ export function Hero() {
         </div>
       </div>
 
+      {/* Video controls - desktop only */}
       <button
         onClick={toggleVideo}
-        className="absolute bottom-8 left-8 z-10 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors backdrop-blur-sm"
+        className="hidden md:flex absolute bottom-8 left-8 z-10 p-3 bg-white/10 hover:bg-white/20 rounded-full transition-colors backdrop-blur-sm"
         aria-label={isPlaying ? 'Pause video' : 'Play video'}
       >
         {isPlaying ? (

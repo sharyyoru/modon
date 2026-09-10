@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const inter = Inter({
@@ -44,6 +45,28 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white">
         {children}
+        
+        {/* LinkedIn Insight Tag */}
+        <Script id="linkedin-insight" strategy="afterInteractive">
+          {`
+            _linkedin_partner_id = "LINKEDIN_PARTNER_ID";
+            window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+            window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+          `}
+        </Script>
+        <Script
+          src="https://snap.licdn.com/li.lms-analytics/insight.min.js"
+          strategy="afterInteractive"
+        />
+        <noscript>
+          <img
+            height="1"
+            width="1"
+            style={{ display: 'none' }}
+            alt=""
+            src="https://px.ads.linkedin.com/collect/?pid=LINKEDIN_PARTNER_ID&fmt=gif"
+          />
+        </noscript>
       </body>
     </html>
   );

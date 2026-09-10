@@ -95,3 +95,42 @@ body {
     transform: scale(1);
   }
 }
+
+/* International Phone Input Styles */
+.phone-input-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.phone-input-wrapper .react-international-phone-input-container {
+  width: 100%;
+}
+
+.phone-input-wrapper .react-international-phone-input {
+  width: 100% !important;
+  height: 56px !important;
+  border: 1px solid #e5e7eb !important;
+  border-left: none !important;
+  border-radius: 0 0.75rem 0.75rem 0 !important;
+  font-size: 1rem !important;
+  padding: 0 1rem !important;
+}
+
+.phone-input-wrapper .react-international-phone-input:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 2px #C4A35A !important;
+  border-color: transparent !important;
+}
+
+.phone-input-wrapper .react-international-phone-country-selector-button {
+  height: 56px !important;
+  border: 1px solid #e5e7eb !important;
+  border-right: none !important;
+  border-radius: 0.75rem 0 0 0.75rem !important;
+  background: #f9fafb !important;
+  padding: 0 0.75rem !important;
+}
+
+.phone-input-wrapper .react-international-phone-country-selector-button:hover {
+  background: #f3f4f6 !important;
+}

@@ -1,69 +1,119 @@
-import Image from "next/image";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { ValueBar } from "@/components/ValueBar";
+import { AboutSection } from "@/components/AboutSection";
+import { UnitTypes } from "@/components/UnitTypes";
+import { Partnership } from "@/components/Partnership";
+import { Gallery } from "@/components/Gallery";
+import { Amenities } from "@/components/Amenities";
+import { PaymentPlan } from "@/components/PaymentPlan";
+import { Location } from "@/components/Location";
+import { Developer } from "@/components/Developer";
+import { FAQ } from "@/components/FAQ";
+import { FeaturedArticles } from "@/components/FeaturedArticles";
+import { RegisterSection } from "@/components/RegisterSection";
+import { Footer } from "@/components/Footer";
+import { TrackingProvider } from "@/components/TrackingProvider";
+import { MobileCTA } from "@/components/MobileCTA";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "RealEstateListing",
+      name: "Modon Avenew",
+      description:
+        "Exclusive 4, 5 & 6 bedroom luxury villas and townhouses in Abu Dhabi by Modon Properties with ADIB financing.",
+      url: "https://modon-avenew.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Abu Dhabi",
+        addressRegion: "Abu Dhabi",
+        addressCountry: "AE",
+      },
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: "24.4539",
+        longitude: "54.3773",
+      },
+    },
+    {
+      "@type": "Organization",
+      name: "Modon Properties",
+      description: "Leading real estate developer in Abu Dhabi",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Abu Dhabi",
+        addressCountry: "AE",
+      },
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What types of properties are available at Modon Avenew?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Modon Avenew offers 4-bedroom, 5-bedroom, and 6-bedroom luxury villas, as well as elegant townhouses.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the minimum downpayment required?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Through our exclusive partnership with ADIB, you can secure your home with just a 5% downpayment.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What financing options are available?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "We offer up to 75% financing through Abu Dhabi Islamic Bank (ADIB) with Sharia-compliant solutions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can foreign nationals purchase property at Modon Avenew?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, Modon Avenew is located in a designated freehold area where foreign nationals can purchase property with full ownership rights.",
+          },
+        },
+      ],
+    },
+  ],
+};
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <TrackingProvider>
+        <Header />
+        <main>
+          <Hero />
+          <ValueBar />
+          <AboutSection />
+          <UnitTypes />
+          <Partnership />
+          <Gallery />
+          <Amenities />
+          <PaymentPlan />
+          <Location />
+          <Developer />
+          <FAQ />
+          <FeaturedArticles />
+          <RegisterSection />
+        </main>
+        <Footer />
+        <MobileCTA />
+      </TrackingProvider>
+    </>
   );
 }

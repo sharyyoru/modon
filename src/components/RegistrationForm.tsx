@@ -54,14 +54,6 @@ const timelines = [
   'Just exploring',
 ];
 
-const sources = [
-  'Google Search',
-  'Social Media',
-  'Friend / Family',
-  'Real Estate Broker',
-  'Advertisement',
-  'Other',
-];
 
 interface RegistrationFormProps {
   onSuccess?: () => void;
@@ -97,7 +89,7 @@ export function RegistrationForm({ onSuccess }: RegistrationFormProps) {
       const response = await fetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, ...utmParams }),
+        body: JSON.stringify({ ...data, ...utmParams, lead_source: 'linkedin' }),
       });
 
       const result = await response.json();
@@ -245,23 +237,6 @@ export function RegistrationForm({ onSuccess }: RegistrationFormProps) {
             ))}
           </select>
         </div>
-      </div>
-
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          How did you hear about us?
-        </label>
-        <select
-          {...register('lead_source')}
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#C4A35A] focus:border-transparent transition-all bg-white text-gray-900"
-        >
-          <option value="">Select Source</option>
-          {sources.map((source) => (
-            <option key={source} value={source}>
-              {source}
-            </option>
-          ))}
-        </select>
       </div>
 
       <Button

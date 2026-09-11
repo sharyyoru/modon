@@ -179,7 +179,14 @@ export function HeroForm() {
         </Button>
 
         <p className="text-xs text-gray-400 text-center">
-          Your info is secure and never shared.
+          By submitting, you agree to our{' '}
+          <a 
+            href="/privacy-policy" 
+            target="_blank"
+            className="text-[#C4A35A] hover:underline"
+          >
+            Privacy Policy
+          </a>
         </p>
       </form>
     </div>

@@ -48,7 +48,7 @@ export function Footer() {
             </p>
             <div className="flex items-center gap-4">
               <a href="/privacy-policy" className="text-white/40 hover:text-white/60 text-xs transition-colors">
-                Privacy
+                Privacy Policy
               </a>
               <a href="/terms-of-use" className="text-white/40 hover:text-white/60 text-xs transition-colors">
                 Terms
